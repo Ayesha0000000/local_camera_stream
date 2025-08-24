@@ -1,0 +1,224 @@
+/* Bootstrap Custom Styles for Emotion Detection App */
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: left;
+}
+
+/* Purple Gradient Background */
+.bg-purple-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+/* Glass Morphism Effects */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  -webkit-backdrop-filter: blur(10px) !important; /* Safari/Chrome */
+  backdrop-filter: blur(10px) !important; /* Standard */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.navbar-glass {
+  background: rgba(0, 0, 0, 0.3) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Custom Navbar Styles */
+.navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+
+.nav-link {
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.hover-purple:hover {
+  background: rgba(111, 66, 193, 0.3) !important;
+  border-radius: 25px !important;
+}
+
+/* Card Hover Effects */
+.hover-card {
+  transition: all 0.3s ease !important;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 30px rgba(111, 66, 193, 0.3) !important;
+}
+
+/* Custom Table Styles */
+.table-dark {
+  --bs-table-bg: transparent !important;
+}
+
+.table-dark th {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #e9ecef !important;
+}
+
+.table-dark td {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(111, 66, 193, 0.2) !important;
+}
+
+/* Custom Form Styles */
+.form-control:focus,
+.form-select:focus {
+  border-color: #6f42c1 !important;
+  box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25) !important;
+}
+
+.bg-dark {
+  background-color: rgba(33, 37, 41, 0.8) !important;
+}
+
+.border-secondary {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Custom Badge Colors */
+.badge {
+  font-size: 0.8em !important;
+  padding: 0.5em 0.8em !important;
+}
+
+/* Pulse Animation */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(111, 66, 193, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(111, 66, 193, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(111, 66, 193, 0.7);
+}
+
+/* Recharts Custom Styles */
+.recharts-wrapper {
+  color: white !important;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: #e9ecef !important;
+}
+
+.recharts-legend-item-text {
+  color: #e9ecef !important;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+/* Button Styles */
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Progress Bar Custom */
+.progress {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Card Header */
+.card-header.bg-transparent {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* List Group Items */
+.list-group-item.bg-transparent {
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Display Classes for Icons */
+.display-1 {
+  font-size: 5rem !important;
+}
+
+.display-4 {
+  font-size: 2.5rem !important;
+}
+
+/* Text Colors */
+.text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem !important;
+  }
+  
+  .display-1 {
+    font-size: 3rem !important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Custom Input Group */
+.input-group-text {
+  background-color: rgba(33, 37, 41, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #fff !important;
+}
+
+/* Animation Classes */
+.transition-all {
+  transition: all 0.3s ease !important;
+}
+
+/* Shadow Effects */
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
